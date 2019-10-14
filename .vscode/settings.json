@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/home/manuel/.local/share/virtualenvs/assalt-alkec7AL/bin/python",
-    "python.linting.enabled": true,
-    "editor.formatOnSave": true,
-    "python.formatting.provider": "black"
-}
