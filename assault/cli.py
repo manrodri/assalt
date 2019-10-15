@@ -1,5 +1,7 @@
 import click
 
+from .http import assault
+
 
 @click.command()
 @click.option("--requests", "-r", default=500, help="Number of requests")
@@ -8,10 +10,10 @@ import click
 @click.argument("url")
 def cli(requests, concurrency, json_file, url):
     print(f"Requests: {requests}")
-    print(f"Concurrency {concurrency}")
-    print("JSON File: {}".format(json_file))
-    print("URL: {}".format(url))
-    pass
+    print(f"Concurrency: {concurrency}")
+    print(f"JSON File: {json_file}")
+    print(f"URL: {url}")
+    assault (url, requests, concurrency)
 
 
 if __name__ == "__main__":
