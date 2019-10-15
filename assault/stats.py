@@ -23,15 +23,15 @@ class Results:
         Returns the slowest request's completion time
 
         >>> results = Results(10.6, [{
-            'status_code': 200,
-            'request_time': 3.4
-        }, {
-            'status_code': 500,
-            'request_time': 6.1
-        }, {
-            'status_code': 200,
-            'request_time': 1.04
-        }])
+        ...     'status_code': 200,
+        ...     'request_time': 3.4
+        ... }, {
+        ...     'status_code': 500,
+        ...     'request_time': 6.1
+        ... }, {
+        ...     'status_code': 200,
+        ...     'request_time': 1.04
+        ... }])
         >>> results.slowest()
         6.1
         """
@@ -39,18 +39,18 @@ class Results:
 
     def fastest(self) -> float:
         """
-        Returns the fastest request's completion time
+        Returns the slowest request's completion time
 
         >>> results = Results(10.6, [{
-            'status_code': 200,
-            'request_time': 3.4
-        }, {
-            'status_code': 500,
-            'request_time': 6.1
-        }, {
-            'status_code': 200,
-            'request_time': 1.04
-        }])
+        ...     'status_code': 200,
+        ...     'request_time': 3.4
+        ... }, {
+        ...     'status_code': 500,
+        ...     'request_time': 6.1
+        ... }, {
+        ...     'status_code': 200,
+        ...     'request_time': 1.04
+        ... }])
         >>> results.fastest()
         1.04
         """
@@ -59,19 +59,19 @@ class Results:
 
     def average_time(self) -> float:
         """
-        Returns the avarage_time request's completion time
+        Returns the average_time request's completion time
 
         >>> results = Results(10.6, [{
-            'status_code': 200,
-            'request_time': 3.4
-        }, {
-            'status_code': 500,
-            'request_time': 6.1
-        }, {
-            'status_code': 200,
-            'request_time': 1.04
-        }])
-        >>> results.avarage_time()
+        ...     'status_code': 200,
+        ...     'request_time': 3.4
+        ... }, {
+        ...     'status_code': 500,
+        ...     'request_time': 6.1
+        ... }, {
+        ...     'status_code': 200,
+        ...     'request_time': 1.04
+        ... }])
+        >>> results.average_time()
         9.846666667
         """
         
@@ -81,21 +81,21 @@ class Results:
         pass
 
     def successful_requests(self) -> int:
-       """
-       Returns the successful_requests request's completion time
+        """
+        Returns the successful_requests request's completion time
 
         >>> results = Results(10.6, [{
-            'status_code': 200,
-            'request_time': 3.4
-        }, {
-            'status_code': 500,
-            'request_time': 6.1
-        }, {
-            'status_code': 200,
-            'request_time': 1.04
-        }])
+        ...     'status_code': 200,
+        ...     'request_time': 3.4
+        ... }, {
+        ...     'status_code': 500,
+        ...     'request_time': 6.1
+        ... }, {
+        ...     'status_code': 200,
+        ...     'request_time': 1.04
+        ... }])
         >>> results.successful_requests()
-            2
+        2
         """
        
-       pass 
+        pass 
