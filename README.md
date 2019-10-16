@@ -66,9 +66,5 @@ $ pipenv shell
 (assault) $
 ```
 
-[1]: https://docs.pipenv.org/en/latest/
-With our documentation in place, we at least have something to come back to if we lose track of what we should be working towards.
 
-The setup.py
-Some of the other files that we'll want to have before we dig into the code are the setup.py and the .gitignore. These files can be written by hand, but there are some pretty great starting points out there.
 
